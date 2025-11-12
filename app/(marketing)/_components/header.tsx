@@ -8,6 +8,7 @@ import Logo from '@/public/logo.png'
 import Image from 'next/image'
 import {RegisterLink, LoginLink, LogoutLink} from "@kinde-oss/kinde-auth-nextjs/components";
 import { useKindeBrowserClient } from '@kinde-oss/kinde-auth-nextjs'
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 
 const menuItems = [
@@ -127,6 +128,7 @@ export const HeroHeader = () => {
                                     )}
                                 </div>
                             )}
+                            <ThemeToggle />
                             
                         </div>
                     </div>
